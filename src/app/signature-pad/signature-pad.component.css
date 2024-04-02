@@ -6,11 +6,15 @@
 }
 
 .canvas-container {
-    margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px; /* Set maximum width for canvas container */
+  margin: 0 auto; /* Center align */
 }
 
 canvas {
-    border: 2px solid #333;
+  width: 100%;
+  height: auto; /* Allow height to adjust based on width */
+  border: 2px solid #333;
 }
 
 .color-picker {
