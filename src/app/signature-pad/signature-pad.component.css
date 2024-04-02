@@ -1,0 +1,55 @@
+.signature-pad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+}
+
+.canvas-container {
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 2px solid #333;
+}
+
+.color-picker {
+    margin-bottom: 10px;
+}
+
+.color-picker label {
+    font-weight: bold;
+}
+
+.download-options {
+    margin-bottom: 20px;
+}
+
+.download-options label {
+    font-weight: bold;
+}
+
+.download-options select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}

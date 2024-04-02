@@ -1,0 +1,30 @@
+<div class="signature-pad-container">
+    <div style="text-align:center">
+        <h1>
+            Welcome to Signature Pad!
+        </h1>
+    </div>
+    <div class="canvas-container">
+        <canvas #canvas width="800" height="400"></canvas>
+    </div>
+    <div class="color-picker">
+        <label>Signature Color:</label>
+        <input type="color" [(ngModel)]="signatureColor" (change)="updateSignatureColor()">
+    </div>
+    <div class="color-picker">
+        <label>Background Color:</label>
+        <input type="color" [(ngModel)]="bgColor" (change)="updateBackgroundColor()">
+    </div>
+    <div class="download-options">
+        <label>Download Format:</label>
+        <select [(ngModel)]="selectedFormat">
+            <option value="png">PNG</option>
+            <option value="jpg">JPG</option>
+            <option value="pdf">PDF</option>
+        </select>
+    </div>
+    <div class="button-container">
+        <button (click)="clearCanvas()">Clear</button>
+        <button (click)="download()">Download Signature</button>
+    </div>
+</div>
